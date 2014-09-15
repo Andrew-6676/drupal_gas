@@ -1,0 +1,203 @@
+/** ------------ MAIN MENU --------------------*/
+nav {text-align: left;}
+#main_menu {
+        z-index: 100;
+        /*font-family: gothic, sans-serif;*/
+        /*font-family: 'Poiret One', gothic, sans-serif;*/
+        font-family:  Verdana;
+        font-size: 1.1em;
+        /*border: 1px solid yellow;*/
+        /*background:white url(bg.gif) repeat-x left top;*/
+        background: #4d4d4d;
+        position: absolute;
+        left: 155px;
+        right: 0;
+        top: 100px;
+        height: 40px;
+        /*z-index: 10;*/
+}
+
+/*-------------------------------------------------------*/
+#main_menu .content>ul
+{
+        display: inline-block;
+        float:left;
+        vertical-align: middle;
+        /*padding: 6px 20px 5px 20px;*/
+        margin: 0px;
+}
+#main_menu .content>ul>li
+{
+        position: relative;
+        /*top: 1px;*/
+        display: inline-block;
+        line-height: 40px;
+}
+#main_menu .content>ul>li.menuparent {
+        background: url("../images/arrow-down.png") 100% center no-repeat;
+}
+#main_menu .content>ul>li>a
+{
+        /*font-family: 'Didact Gothic', sans-serif;*/
+        color: #fff;
+        background-color: transparent;
+        /*font-size: 16px;*/
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0px 15px 0 10px;
+        /*margin: 0 -3px;*/
+        display: block;
+}
+
+#main_menu .content>ul>li>a:hover, #main_menu .content>ul>li.active>a, #main_menu .content>ul>li:hover>a  {
+        color: #000;
+        /*border-radius: 5px 5px 0 0;*/
+        text-decoration: none;
+        /*box-shadow: 10px 5px 10px 0px black;*/
+}
+#main_menu .content>ul>li:hover {
+        box-shadow: 8px 8px 10px -2px black;
+        background-color: #fff;
+        /*url("../images/arrow-down.png") 100% center no-repeat*/
+}
+
+/*-----------------------SUB MENU----------------***/
+#main_menu .content>ul>li>ul{
+        z-index: 1000;
+        border-top: 1px solid #9c9c9c;
+        /*margin: 20px;*/
+        /*padding-top: 60px;*/
+        /*display: block;*/
+        margin: 0 0px;
+        list-style: disc inside none;
+        padding: 5px 10px 5px 10px;
+        /*display: none;*/
+        /*opacity: 0;*/
+        /*visibility: hidden;*/
+        position: absolute;
+        left: 0;
+        /*top: 35px;*/
+        background: #fff;
+        min-width: 150%;
+        box-shadow: 8px 8px 10px -2px black;
+       /* -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;*/
+        border-radius: 0 5px 5px 5px;
+}
+    /* при наведении на пункт главного меню показать подменю */
+/*#main_menu>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}*/
+#main_menu .content>ul>li>ul>li {
+        display: list-item;
+        border-radius: 4px;
+        line-height: 20px;
+        /*width: 95%;*/
+        white-space: nowrap;
+        padding: 0 20px 0 10px;
+        /*margin-right: 30px;
+        margin-left: 10px;*/
+}
+#main_menu .content>ul>li>ul>li.menuparent {
+    background: url("../images/arrow-right.png") 100% center no-repeat;
+}
+#main_menu .content>ul>li>ul>li>a {
+        display: inline-block;
+        width: 100%;
+        color: #000;
+        background-color: transparent;
+        /*font-size: 14px;*/
+        line-height: 20px;
+        padding: 3px 10px 3px 0;
+        font-size: 0.9em;
+        text-decoration: none;
+        font-weight: normal;
+        /*padding: 21px 10px;*/
+}
+/*---------------*/
+#main_menu .content>ul>li>ul>li:hover {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    /*padding-left: 20px;*/
+    background-color: #4d4d4d;
+}
+#main_menu .content>ul>li>ul>li:hover>a, #main_menu .content>ul>li>ul>li:hover>a>.strong {
+    color: #fff;
+}
+
+/*-------------------третий уровень меню---------------------------*/
+/*.has_child {
+    background: url(../images/sub.png) no-repeat right center;
+}
+.has_child:hover {
+    background: none;
+}*/
+
+.sub_sub_menu,
+#main_menu .content>ul>li>ul>li>ul{
+        z-index: 899;
+        /*margin: 20px;*/
+        /*padding-top: 60px;*/
+        /*display: block;*/
+        /*margin-left: 50px;*/
+        /*margin: 0 -3px;*/
+        list-style: square inside none;
+        padding: 5px 10px 5px 10px;
+        /*display: none;*/
+        /*opacity: 0;*/
+        /*visibility: hidden;*/
+        position: absolute;
+        left: 70px;
+        top: 0px;
+        background: #9c9c9c;
+        /*min-width: 150%;*/
+        box-shadow: 0px 5px 25px 10px #2c2c2c;
+        border-radius: 5px 5px 5px 5px;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+
+#main_menu .content>ul>li>ul>li>ul>li {
+    display: list-item;
+    list-style-type: square;
+    white-space: nowrap;
+    padding: 0 20px 0 10px;
+    border-radius: 4px;
+}
+
+/*#main_menu .content>ul>li>ul>li>ul>li:hover>.sub_sub_menu {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+}*/
+
+#main_menu .content>ul>li>ul>li>ul>li>a {
+    display: inline-block;
+    padding: 1px 5px 1px 5px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: normal;
+}
+#main_menu .content>ul>li>ul>li>ul>li:hover {
+    background: #c00;
+}
+
+/*li {
+    border-radius: 4px;
+}*/
+
+/*-------------------------------------------------------------------------*/
+.strong{
+    color: blue;
+    font-weight: bold;
+}

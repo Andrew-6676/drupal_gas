@@ -1,0 +1,28 @@
+; $Id: gas.info, v 0.1 2014/09/05 08:26:20
+name = Gas
+description = Тема, разработанная специально для сайта ПУ "Витебскгаз"
+package = Core
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/page.css
+stylesheets[all][] = css/content.css
+
+;stylesheets[print][] = print.css
+;settings[garland_width] = fluid
+
+scripts[] = js/jquery.js
+scripts[] = js/main.js
+;scripts[] = js/main_menu.js
+
+regions[header] = Header
+regions[r_header] = Правая часть хедэра
+regions[main_menu] = Главное меню
+regions[breadcrumbs] = Breadcrumbs
+regions[login] = Форма входа
+regions[title] = Заголовок страницы
+regions[content] = Контент
+regions[footer] = Footer
