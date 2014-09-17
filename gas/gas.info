@@ -8,6 +8,7 @@ engine = phptemplate
 
 stylesheets[all][] = css/main.css
 stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/tables.css
 stylesheets[all][] = css/page.css
 stylesheets[all][] = css/content.css
 
@@ -20,6 +21,7 @@ scripts[] = js/main.js
 
 regions[header] = Header
 regions[r_header] = Правая часть хедэра
+
 regions[main_menu] = Главное меню
 regions[breadcrumbs] = Breadcrumbs
 regions[login] = Форма входа

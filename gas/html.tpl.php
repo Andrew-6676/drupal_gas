@@ -1,3 +1,11 @@
+ <?php
+	   // настройки для CKEditor
+    $_SESSION['KCFINDER'] = array();
+    $_SESSION['KCFINDER']['disabled'] = false;
+        // пути берутся из конфига сайта
+    $_SESSION['KCFINDER']['uploadURL'] = 'http://'.$_SERVER['SERVER_NAME'].'/drupal/sites/gas/';
+    $_SESSION['KCFINDER']['uploadDir'] = "/var/www/drupal/sites/gas/";
+?>
 <!DOCTYPE HTML>
 <html lang="ru" >
 <head>

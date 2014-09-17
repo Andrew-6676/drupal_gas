@@ -1,0 +1,47 @@
+/*view page contact*/
+.contact-table thead td, .contact-table tfoot td{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #D2D2D2;
+}
+.contact-table, .sort-contact-table{
+	border-collapse: separate;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+}
+.contact-table td {
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+	border-spacing: 0px;
+}
+
+.contact-table .secondName{
+	background: #FFC9C9;
+}
+/*.boss*/
+.contact-table tbody tr:first-child td{
+	font-weight: bold;
+	background: #B0E6F8;
+}
+.contact-table tbody tr:hover td{
+	background: #DAE9EF;
+	cursor: pointer;
+}
+
+/*----------------------- Сортировка контактов ----------------------------------------------*/
+.sort-contact-table thead td, .sort-contact-table tfoot td{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #D2D2D2;
+}
+.sort-contact-table {
+	margin:auto;
+}
+.sort-contact-table tbody td{
+	padding: 5px 2px;
+}

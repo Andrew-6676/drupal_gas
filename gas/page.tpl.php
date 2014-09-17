@@ -8,16 +8,8 @@
 
 	<div class='logo_wrapper'>
 		<div class='top_logo'>
-
-			<div class='slogan'>БЕЗАВАРИЙНОЕ И БЕСПЕРЕБОЙНОЕ ОБЕСПЕЧЕНИЕ ГАЗОМ ПОТРЕБИТЕЛЕЙ</div>
-			<!-- <div class='search'> -->
-			<!-- form name='search' method='GET' action='/search/node/' >
-				<input name='str' id='search_input' type='text' placeholder='Поиск'>
-				<input type="submit" style='display:none'>
-			</form -->
-
+			<div class='slogan'><?php print $site_slogan; ?></div>
 			<?php print render($page['r_header']); ?>
-			<!-- </div> -->
 		</div>
 	</div>    <!-- end logo_wrapper -->
 
@@ -27,7 +19,7 @@
 			<?php global $user; ?>
 			<div class='login_href <?php if($user->uid>0) {print "login";} ?>'></div>
 		</nav>  <!-- #main menu  -->
-	</div>
+	</div>		<!-- #menu_wrapper -->
 
 
 	<div id='breadcrumbs'>
@@ -35,8 +27,6 @@
 		<?php print $breadcrumb; ?>
 	</div>		<!-- breadcrumbs -->
 </header>
-
-
 
 				<!-- <div class='login_href'></div> -->
 				<div id='login_form'>
@@ -55,28 +45,20 @@
 
 <div class='content_wr'>
 
-<!-- <h1>content</h1> -->
 	<div class='page'>
-
-		<h1>
-			<?php if($title): print $title; endif; ?>
-			<!-- ?php print render($page['title']); /* Выводим регион "заголовок" */ ? -->
-		</h1>
-
+		<?php print render($tabs)?>
+		<?php print $messages; ?>
+		<?php print render($title_prefix); ?>
+		<?php if($title):?> <h1> <?php print $title; ?> </h1> <?php endif; ?>
+		<?php print render($title_suffix); ?>
+		<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 	    <?php print render($page['content']); /* Выводим регион "контент" */ ?>
-
-
-			<pre>
-				<?php
-					//  print_r(get_defined_vars());
-					// print_r($main_menu);
-				?>
-			</pre>
-
 	</div>		<!-- page -->
 
 
 </div>	<!-- content_wr -->
+
+
 
 <footer id="footer_wr">
  	<div class="f_left_ear">		</div>
@@ -125,7 +107,7 @@
 <div class="ff">
 	<small>Copyright © 2014</small>
 	<small>	Разработчик: <a href='mailto: Andrew@vitebsk.oblgas.by'>Шавнёв А.Л.  (Andrew@vitebsk.oblgas.by)</a></small>
-	<small> Powered by <a href="http://drupal.org/" rel="external">Drupal</a>. </small>
+	<small> Powered by <a href="http://drupal.org/" rel="external">Drupal 7</a>. </small>
 </div>
 
 <a id="to_bottom" href='#footer_wr'>
@@ -137,4 +119,3 @@
 	<div>
 	</div>
 </a>
-	<!-- </div> -->    <!-- #body  -->
