@@ -1,3 +1,48 @@
+tbody {
+    border: none;
+}
+/*--------------------------------------------*/
+.node-question {
+    background: #fff;
+    padding: 10px;
+    text-align: justify;
+}
+/*--------------------------------------------*/
+.search-form {
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    background: #E6E6E6;
+    border-radius: 7px;
+}
+ol.search-results {
+
+}
+li.search-result {
+    border: 1px solid silver;
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 0.6em;
+}
+.search-result .title {
+    font-size: 1em;
+}
+.search-snippet-info {
+    font-size: 0.9em;
+}
+.search-info {
+    display: none;
+}
+/*--------------------------------------------------*/
+.region-content {
+    position: relative;
+    /*top: -7px;*/
+}
+.view-content .item-list {
+    padding-top: 10px;
+}
+/*------------------------------------------------*/
 /*@-o-keyframes anim_login{
     0% {top: 35px; z-index: 100;}
     40% {top: 165px; z-index: 1000;}
@@ -26,6 +71,35 @@
     100% {top: 35px;z-index: 80;}
 }
 /*--------------------------------------------------*/
+.node-type-list a:hover {
+    color: red;
+}
+.node-type-list {
+    margin-left: 30px;
+    font-size: 1.3em;
+}
+.node-type-list dt:before{
+    content: '-';
+}
+.node-type-list dt {
+    /*display: inline-block;*/
+    margin-top: 5px;
+}
+.node-type-list dd {
+    /*display: inline;*/
+    margin-left: 20px;
+    font-size: 0.7em;
+    color: gray;
+}
+/*--------------------------------------------------*/
+.overlay-element.overlay-active {
+    height: 85%;
+}
+/*--------------------------------------------------*/
+.block-demo-backlink.overlay-restore {
+    top: 30px;
+}
+/*-------------------------------------------------*/
 #print_r {
     position: fixed;
     top: 0;
@@ -68,7 +142,7 @@ body {
         min-height: calc(100% - 170px);
         min-height: 84%;
         max-width: 1300px;
-        width: 90%;
+        width: 95%;
         min-width: 1120px;
 }
 body {
@@ -142,6 +216,10 @@ body {
     position: absolute;
     bottom: 0px;
     right: 0px;
+    height: 30px;
+}
+.block-search {
+    height: 100%;
 }
 .region.region-r-header .form-actions {
     display: none;

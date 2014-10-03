@@ -1,0 +1,40 @@
+
+.region.region-content {
+	background: #fff;
+	padding: 15px;
+}
+.region.region-content h2 {
+	display: none;
+}
+/*view page vakansii*/
+.views-row{
+	font-size: 13pt;
+	/*border-radius: 5px;*/
+	padding: 10px;
+	margin-bottom: 20px;
+	background: rgb(201, 234, 255);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.views-row:hover{
+	background: #DAE9EF;
+}
+.field{
+	padding-bottom: 10px;
+}
+.field-label{
+	display: inline-block;
+	width: 250px;
+	font-weight: bold;
+	vertical-align: top;
+}
+.field-items{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 920px;
+}
+.no-job{
+	padding: 50px;
+	font-size: 16pt;
+	text-align: center;
+}

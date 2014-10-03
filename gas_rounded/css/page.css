@@ -1,0 +1,128 @@
+/*--------------------------------------------*/
+.img_wr {
+  position: relative;
+  display: inline-block
+}
+.podpis{
+   position: absolute;
+   /*top: 530px;
+   left: 50px;*/
+   border: 1px solid rgb(94, 91, 91);
+  /* width: 300px;*/
+   /*border-top: none;*/
+   text-align: center;
+   padding: 0px 0 0 0;
+   color: #000;
+   background: #C0BFBF;
+   text-indent: 0px;
+   font-size: 0.8em;
+   border-radius: 2px;
+}
+/*--------- общее для всех страниц ---------*/
+h1 {
+  position: relative;
+}
+h1:after {
+  content: ' ';
+  display: block;
+  background: #6389EB;
+  /*background: red;*/
+  height: 7px;
+  width: 100%;
+  border-radius: 0 0 7px 7px;
+
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.parent, h2 {
+     font-weight: bold;
+     font-size: 1.2em;
+   }
+  .child {
+     background: #fff;
+     border-radius: 0 0 7px 7px;
+     /*margin-left: 30px;*/
+     margin-bottom: 30px;
+     padding: 10px;
+     border: 1px solid silver;
+
+   }
+   .table1 {
+    width: 100%;
+}
+   .table1 td {
+     border: 1px solid gray;
+     padding:7px;
+     width: 50%;
+   }
+   .table2 {
+      margin-left: 30px;
+      font-style: italic;
+      font-weight: bold;
+   }
+   h2 {
+      cursor: pointer;
+
+   }
+/*-------------------------------------------------------------------*/
+.edit_button {
+    display: none;
+    border: 1px solid #595959;
+    border-radius: 5px;
+    padding: 5px;
+    background: #000;
+    position: absolute;
+    left: 30px;
+    box-shadow: -5px -5px 10px 0px rgba(0,0,0,0.5);
+
+}
+.edit_button a{
+    color: #fff;
+    font-weight: bold;
+}
+.edit_button a:hover{
+    color: #ff0;
+
+}
+.page:hover  .edit_button {
+    display: block;
+    transition: all .5s ease 0s;
+}
+/*----------------------------------------------------------*/
+.page {
+	padding: 0px 15px 15px 15px;
+}
+
+.border {
+    /*border-radius: 5px;*/
+    border: 1px solid silver;
+    padding: 20px;
+    margin: 0 0 15px 0px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 0 7px 7px;
+}
+p {
+    text-indent: 30px;
+}
+ul, ol {
+    /*list-style: disc inside none;*/
+    margin-left: 50px;
+}
+li {
+     /*display: list-item;*/
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    background: #6389EB;
+    /*margin-bottom: 15px;*/
+    border-radius: 7px 7px 0 0;
+}
+/*-------------------------------------------------------------*/
+.map {
+  margin-top: 30px;
+  text-align: center;
+}

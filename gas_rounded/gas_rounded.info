@@ -1,0 +1,30 @@
+; $Id: gas.info, v 0.1 2014/09/05 08:26:20
+name = Gas rounded
+description = Тема, разработанная специально для сайта ПУ "Витебскгаз", круглые углы
+package = Core
+version = VERSION
+core = 7.x
+engine = phptemplate
+;base theme = gas
+
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/page.css
+stylesheets[all][] = css/content.css
+
+scripts[] = js/main.js
+
+regions[r_header] = Правая часть хедэра
+regions[main_menu] = Главное меню
+regions[main_menu_right] = Главное меню, справа
+regions[breadcrumbs] = Breadcrumbs
+regions[login] = Форма входа
+regions[title] = Заголовок страницы
+regions[pre_content] = Контент 1
+regions[content] = Контент 2
+regions[abonentam] = Абонентам
+
+regions[top_slider] = Верхний слайд главной страницы
+regions[left_slider] = Малый слайд главной страницы
+
+

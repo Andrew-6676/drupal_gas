@@ -38,6 +38,7 @@
 }*/
 /** ------------ MAIN MENU --------------------*/
 nav {text-align: left;}
+
 #main_menu {
         z-index: 1000000;
         /*font-family: gothic, sans-serif;*/
@@ -55,8 +56,19 @@ nav {text-align: left;}
         /*z-index: 10;*/
 }
 /*-----------------------------------------*/
+.main-menu_right {
+    display: inline-block;
+    float: right;
+    /*width: 100px;*/
+    height: 40px;
+    /*border: 1px solid red;*/
+}
 .login_href {
-        float:right;
+        /*float:right;*/
+        z-index: 7;
+        position: absolute;
+        top: 0;
+        right: 0;
         display: inline-block;
         height: 40px;
         width: 40px;

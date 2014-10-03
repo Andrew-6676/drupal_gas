@@ -19,7 +19,11 @@
  * @ingroup views_templates
  */
 ?>
-<table <?php if ($classes) { print 'class=" sort-contact-table '. $classes . '" '; } ?><?php print $attributes; ?>>
+
+<table <?php if ($classes) { print 'class=" contact-table '. $classes . '" '; } ?><?php print $attributes; ?>>
+  <caption>
+    <h3 style="background: #fff; font-size: 1.6em; padding-top: 10px;">Телефоны</h3>
+  </caption>
    <?php if (!empty($title) || !empty($caption)) : ?>
      <caption><?php print $caption . $title; ?></caption>
   <?php endif; ?>
@@ -45,6 +49,16 @@
       </tr>
     <?php endforeach; ?>
   </tbody>
-
+  <?php if (!empty($header)) : ?>
+    <tfoot>
+      <tr>
+        <?php foreach ($header as $field => $label): ?>
+          <td <?php if ($header_classes[$field]) { print 'class="'. $header_classes[$field] . '" '; } ?>>
+            <?php print $label; ?>
+          </td>
+        <?php endforeach; ?>
+      </tr>
+    </tfoot>
+  <?php endif; ?>
 </table>
-<a href="contact">Вернуться к контактам</a>
+

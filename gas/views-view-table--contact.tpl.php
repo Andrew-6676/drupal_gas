@@ -19,7 +19,11 @@
  * @ingroup views_templates
  */
 ?>
+
 <table <?php if ($classes) { print 'class=" contact-table '. $classes . '" '; } ?><?php print $attributes; ?>>
+  <caption>
+    <h3 style="background: #fff; font-size: 1.6em; padding-top: 10px;">Телефоны</h3>
+  </caption>
    <?php if (!empty($title) || !empty($caption)) : ?>
      <caption><?php print $caption . $title; ?></caption>
   <?php endif; ?>
@@ -58,5 +62,3 @@
   <?php endif; ?>
 </table>
 
-<?php global $user; ?>
-<?php if($user->uid==1): ?> <a href="contact_sort">Сортировать контакты</a> <?php endif; ?>

@@ -1,3 +1,18 @@
+.podpis{
+   position: absolute;
+   /*top: 530px;
+   left: 50px;*/
+   border: 1px solid rgb(94, 91, 91);
+  /* width: 300px;*/
+   /*border-top: none;*/
+   text-align: center;
+   padding: 0px 0 0 0;
+   color: #000;
+   background: #C0BFBF;
+   text-indent: 0px;
+   font-size: 0.8em;
+   border-radius: 2px;
+}
 /*--------- общее для всех страниц ---------*/
 .parent, h2 {
      font-weight: bold;
@@ -11,6 +26,9 @@
      border: 1px solid silver;
 
    }
+   .table1 {
+    width: 100%;
+}
    .table1 td {
      border: 1px solid gray;
      padding:7px;
@@ -65,8 +83,11 @@ p {
     text-indent: 30px;
 }
 ul, ol {
-    list-style: disc inside none;
+    /*list-style: disc inside none;*/
     margin-left: 50px;
+}
+li {
+     /*display: list-item;*/
 }
 h1 {
     text-align: center;

@@ -1,0 +1,435 @@
+tbody {
+    border: none;
+}
+/*--------------------------------------------*/
+.node-question {
+    background: #fff;
+    padding: 10px;
+    text-align: justify;
+}
+/*--------------------------------------------*/
+.search-form {
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    background: #E6E6E6;
+    border-radius: 7px;
+}
+ol.search-results {
+
+}
+li.search-result {
+    border: 1px solid silver;
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 0.6em;
+}
+.search-result .title {
+    font-size: 1em;
+}
+.search-snippet-info {
+    font-size: 0.9em;
+}
+.search-info {
+    display: none;
+}
+/*--------------------------------------------------*/
+.region-content {
+    position: relative;
+    /*top: -7px;*/
+}
+.view-content .item-list {
+    padding-top: 10px;
+}
+/*@-o-keyframes anim_login{
+    0% {top: 35px; z-index: 100;}
+    40% {top: 165px; z-index: 1000;}
+    100% {top: 145px; z-index: 1000;}
+}*/
+/* анимация показать окно логина*/
+@-webkit-keyframes anim_login{
+    0% {top: 35px; z-index: 80;}
+    40% {top: 165px; z-index: 100;}
+    100% {top: 145px; z-index: 100;}
+}
+@keyframes anim_login{
+    0% {top: 35px;z-index: 80;}
+    40% {top: 165px; z-index: 100;}
+    100% {top: 145px;z-index: 100;}
+}
+/*  анимация спрятать окно логина*/
+@-webkit-keyframes anim_login_hide{
+    0% {top: 145px;z-index: 100;}
+    60% {top: 165px; z-index: 100;}
+    100% {top: 35px;z-index: 80;}
+}
+@keyframes anim_login_hide{
+    0% {top: 145px;z-index: 100;}
+    60% {top: 165px; z-index: 100;}
+    100% {top: 35px;z-index: 80;}
+}
+/*--------------------------------------------------*/
+.node-type-list a:hover {
+    color: red;
+}
+.node-type-list {
+    margin-left: 30px;
+    font-size: 1.3em;
+}
+.node-type-list dt:before{
+    content: '-';
+}
+.node-type-list dt {
+    /*display: inline-block;*/
+    margin-top: 5px;
+}
+.node-type-list dd {
+    /*display: inline;*/
+    margin-left: 20px;
+    font-size: 0.7em;
+    color: gray;
+}
+/*--------------------------------------------------*/
+.overlay-element.overlay-active {
+    height: 85%;
+}
+/*--------------------------------------------------*/
+.block-demo-backlink.overlay-restore {
+    top: 30px;
+}
+/*-------------------------------------------------*/
+#print_r {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(255,255,255, 0.8);
+    border: rgba(128,128,128, 0.8);
+    padding: 10px;
+    z-index: 1056;
+}
+/*--------------------------------------------------------------------------------------------*/
+article, aside, figure, figcaption, footer, header, hgroup, nav, section, summary {
+   display: block;
+}
+* {
+        font-family: Arial, "Times New Roman", Liberation Serif;
+        margin: 0;
+        padding: 0;
+}
+html {
+    height:100%;
+    padding-left: 27px;
+    padding-right: 27px;
+    /*overflow-y: scroll;*/
+    background-color: #fafafa;
+    /*background: url(../images/back.png) fixed repeat-y;*/
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+body {
+        position:relative;
+        /*text-align: center;*/
+        /*border: 2px solid black;*/
+        /*background: #d5d6d6;*/
+        margin: auto;
+        min-height: -moz-calc(100% - 170px);
+        min-height: -webkit-calc(100% - 170px);
+        min-height: calc(100% - 170px);
+        min-height: 84%;
+        max-width: 1300px;
+        width: 95%;
+        min-width: 1120px;
+}
+body {
+    padding-top: 140px;
+    background: url(../images/back_2.png);
+    box-shadow: 0 0 35px -5px #D1D1D1;
+    /*margin: 0 27px 0 27px;*/
+    /*padding-bottom: 70px;*/
+}
+/**------------------------ HEADER -------------------*/
+#header_wr {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    height: 140px;
+    width: 100%;
+    /*border: 1px green solid;*/
+    box-shadow: 0px 5px 10px 10px gray;
+    background: #81AACF; /*#5EBDF7; #0075ba;*/
+}
+.left_ear, .right_ear {
+    /*background: #fff;*/
+    /*border: 1px solid black;*/
+    height: 157px;
+    width: 27px;
+    position: absolute;
+    /*top: 17px;*/
+}
+.left_ear {
+    left:-27px;
+    /*background: url(../images/top_ear_140x54.png) no-repeat;*/
+    height: 140px;
+}
+.left_ear .d_top {
+    background: #88B9E7;
+    height: 140px;
+}
+.left_ear .d_bott {
+    border-style: solid;
+    border-width: 0px 27px 20px 0px;
+    border-color: transparent #6F7C8A transparent transparent;
+}
+.right_ear {
+    right: -27px;
+    height: 140px;
+    /*background: url(../images/top_ear_140x54.png) no-repeat 100% 0%;*/
+}
+.right_ear .d_top {
+    background: #88B9E7;
+    height: 140px;
+}
+.right_ear .d_bott {
+    border-style: solid;
+    border-width: 20px 27px 0px 0px;
+    border-color: #6F7C8A transparent transparent transparent;
+}
+/*-------------------------------*/
+/*.logo_wrapper {
+    padding-left: 100px;
+    width: 100%;
+    border: 2px solid lime;
+}*/
+.left_logo {
+    float: left;
+    /*border: red 1px solid;*/
+    background: url(../images/logo_left.png) no-repeat 10% 80%;
+    width: 205px;
+    height: 140px;
+}
+.top_logo {
+    position: absolute;
+    left: 155px;
+    right: 0;
+    height: 90px;
+    /*width: 100%;*/
+    /*border: 1px solid yellow;*/
+    background: url(../images/logo_top.png) no-repeat 0% 80%;
+    border-bottom: 3px solid #fff;
+}
+.slogan {
+    position: absolute;
+    /*background: #da2538;*/
+    bottom: 55px;
+    /*float:right;*/
+    right: 10px;
+    color: #000;
+}
+/*----------------------------------------*/
+.region.region-r-header {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 30px;
+}
+.block-search {
+    height: 100%;
+}
+.region.region-r-header .form-actions {
+    display: none;
+}
+.region.region-r-header .form-item .form-text {
+    /*float: right;*/
+    padding: 3px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 200px;
+    bottom: 7px;
+    background: url(../images/search.png) no-repeat 98% #fff;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+/**--------------------------------------CONTENT------------------------------------------**/
+.content_wr {
+    /*background-color: #d5d6d6;*/
+    margin-top: 30px;
+    /*height: 100%;*/
+    padding-bottom: 80px;
+    /*border: 1px solid blue;*/
+}
+/**-------------------------------------------------------**/
+/**----------------------- FOOTER ------------------------**/
+#footer_wr {
+        background-color: #4d4d4d;
+        position: absolute;
+        bottom: 0px;
+        /*border: 2px solid green;*/
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        /*padding: 2px 10px;*/
+        clear: both; /* Отменяем обтекание */
+        box-shadow: 0 -5px 7px 0 gray;
+}
+.links {
+    /*margin: auto;*/
+    /*text-align: center;*/
+    /*float: left;*/
+}
+.links a {
+    display: inline-block;
+    margin: 2px -2px 0px 2px;
+}
+.links img {
+    /*max-width: 20%;*/
+    /*height: 100%;*/
+}
+
+.f_wrap_img {
+    display: inline-block;
+    /*width: 19%;*/
+}
+/*--------*/
+/*.f_right {
+    float: right;
+    font-size: 12px;
+}*/
+
+.f_left_ear, .f_right_ear {
+    position: relative;
+    width: 14px;
+    height: 80px;
+    top: -10px;
+    /*border: 1px solid lime;*/
+    background: url(../images/footer_ear.png) no-repeat;
+}
+.f_left_ear {
+    left: -14px;
+    float: left;
+    background-position: 0% 0%;
+}
+.f_right_ear {
+    float: right;
+    left: 14px;
+    background-position: 100% 0%;
+}
+/*----------------------- footer ------------------*/
+.ff {
+    width: 100%;
+    position: absolute;
+    bottom: -13px;
+    text-align: center;
+}
+.ff small {
+    padding: 0 30px 0 30px;
+    font-size: 10px;
+}
+/**------------------------------------------------------------------------**/
+#to_top div, #to_bottom div {
+    position: fixed;
+    z-index: 9999;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px 5px #5e5e5e;
+}
+#to_top div:hover, #to_bottom div:hover {
+    border: 2px solid #0f0;
+    box-shadow: 0 0 20px 5px #292929;
+}
+/*------------*/
+#to_top div{
+    top: 20px;
+    background: url(../images/arrows.png) 0% 0% no-repeat #000;
+}
+
+#to_top div:hover {
+    background: url(../images/arrows.png) 100% 0% no-repeat #000;
+}
+/*-----*/
+#to_bottom div{
+    bottom: 20px;
+    background: url(../images/arrows.png) 0% 100% no-repeat #000;
+}
+
+#to_bottom div:hover {
+    background: url(../images/arrows.png) 100% 100% no-repeat #000;
+}
+/**------------------------------------------------------------------------**/
+/**------------------------------------------------------------------------**/
+.form-item, .form-actions {
+    margin: 0;
+}
+#login_form {
+    display: none;
+   /*-webkit-animation: anim_login 1.5s 1;*/
+    /*animation: anim_login 1.5s 1;*/
+
+    z-index: 1001;
+    position: absolute;
+    right: 3px;
+    top: 145px;
+    border-left: 1px solid #E0F3FF;
+    border-top: 1px solid #E0F3FF;
+    border-right: 1px solid #7c7c7c;
+    border-bottom: 1px solid #7c7c7c;
+    border-radius: 5px;
+    background-color: #BAE3FF;
+    width: 170px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+#login_form label {
+    display: none;
+}
+#login_form input {
+    border-radius: 3px;
+    width: 165px;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 0px 2px;
+}
+#login_form .button {
+    float: right;
+    padding: 0px 2px;
+    width: 50px;
+    /*margin-top: 5px;*/
+}
+#login_form span {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#login_form span a {
+    /*color: #888;*/
+}
+#login_form span a:hover {
+    /*color: #00f;*/
+}
+#login_form ul {
+    margin: 0 0 0 10px;
+    font-size: 0.8em;
+}
+#login_form ul li{
+    list-style: disc;
+}
+#login_form #result {
+    display: block;
+    display: none;
+    /* position: absolute; */
+    bottom: 0;
+    margin-bottom: 8px;
+    text-align: center;
+    color: red;
+}
+

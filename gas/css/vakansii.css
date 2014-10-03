@@ -1,0 +1,32 @@
+/*view page vakansii*/
+.job{
+	font-size: 13pt;
+	/*border-radius: 5px;*/
+	padding: 10px;
+	margin-bottom: 20px;
+	background: rgb(201, 234, 255);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.job:hover{
+	background: #DAE9EF;
+}
+.job-field{
+	padding-bottom: 10px;
+}
+.job-caption{
+	display: inline-block;
+	width: 250px;
+	font-weight: bold;
+	vertical-align: top;
+}
+.job-info{
+	display: inline-block;
+	vertical-align: top;
+	width: 920px;
+}
+.no-job{
+	padding: 50px;
+	font-size: 16pt;
+	text-align: center;
+}

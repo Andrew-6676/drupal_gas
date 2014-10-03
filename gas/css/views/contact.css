@@ -9,7 +9,7 @@
 	border-collapse: separate;
 	width: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 5px;
 	background: #fff;
 }
 .contact-table td {
@@ -21,6 +21,7 @@
 
 .contact-table .secondName{
 	background: #FFC9C9;
+	white-space: nowrap;
 }
 /*.boss*/
 .contact-table tbody tr:first-child td{
@@ -30,18 +31,4 @@
 .contact-table tbody tr:hover td{
 	background: #DAE9EF;
 	cursor: pointer;
-}
-
-/*----------------------- Сортировка контактов ----------------------------------------------*/
-.sort-contact-table thead td, .sort-contact-table tfoot td{
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	background: #D2D2D2;
-}
-.sort-contact-table {
-	margin:auto;
-}
-.sort-contact-table tbody td{
-	padding: 5px 2px;
 }
